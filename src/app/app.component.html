@@ -1,0 +1,41 @@
+<igx-navbar class="navbar">
+  <igx-avatar src="/assets/Logo.svg" [roundShape]="true" class="avatar"></igx-avatar>
+  <button igxButton="flat" igxRipple routerLink="/view1" class="button">
+    View 1
+  </button>
+  <button igxButton="flat" igxRipple routerLink="/view2" class="button">
+    View 2
+  </button>
+  <button igxButton="flat" igxRipple routerLink="/view3" class="button">
+    View 3
+  </button>
+</igx-navbar>
+<div class="view-container">
+  <router-outlet></router-outlet>
+</div>
+<igx-tree class="tree">
+  <igx-tree-node [expanded]="true">
+    <igx-tree-node [expanded]="true">
+      Figma
+    </igx-tree-node>
+    <igx-tree-node [expanded]="true">
+      Adobe XD
+    </igx-tree-node>
+    <igx-tree-node [expanded]="true">
+      Sketch
+    </igx-tree-node>
+    Design
+  </igx-tree-node>
+  <igx-tree-node [expanded]="true">
+    <igx-tree-node [expanded]="true">
+      Angular
+    </igx-tree-node>
+    <igx-tree-node [expanded]="true">
+      Blazor
+    </igx-tree-node>
+    <igx-tree-node [expanded]="true">
+      Web components
+    </igx-tree-node>
+    Development
+  </igx-tree-node>
+</igx-tree>
